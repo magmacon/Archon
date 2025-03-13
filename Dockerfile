@@ -18,11 +18,9 @@ COPY . .
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=/app
 
-# Expose port for Streamlit
+# Expose ports (Ensure Streamlit and Backend are open)
 EXPOSE 8501
-
-# Expose port for the Archon Service (started within Streamlit)
-EXPOSE 8100
+EXPOSE 8101
 
 # Set the entrypoint to run Streamlit directly
 CMD ["streamlit", "run", "streamlit_ui.py", "--server.port=8501", "--server.address=0.0.0.0"]

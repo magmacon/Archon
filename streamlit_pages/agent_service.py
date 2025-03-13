@@ -33,7 +33,7 @@ def agent_service_tab():
         # Check if process is still running
         return st.session_state.service_process.poll() is None
     
-    # Function to kill any process using port 8100
+    # Function to kill any process using port 8101
     def kill_process_on_port(port):
         try:
             if platform.system() == "Windows":
@@ -113,8 +113,8 @@ def agent_service_tab():
             st.session_state.service_output = []
             st.session_state.output_queue = queue.Queue()
             
-            # Kill any process using port 8100
-            kill_process_on_port(8100)
+            # Kill any process using port 8101
+            kill_process_on_port(8101)
             
             # Start new process
             try:

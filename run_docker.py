@@ -96,7 +96,7 @@ def main():
         "docker", "run", "-d",
         "--name", "archon-container",
         "-p", "8501:8501",
-        "-p", "8100:8100",
+        "-p", "8101:8101",
         "--add-host", "host.docker.internal:host-gateway"
     ]
     

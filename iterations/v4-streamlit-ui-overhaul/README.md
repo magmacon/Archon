@@ -169,7 +169,7 @@ The MCP tab simplifies the process of configuring MCP for AI IDEs:
 The Docker implementation consists of two containers:
 1. **Main Archon Container**:
    - Runs the Streamlit UI on port 8501
-   - Hosts the Graph Service on port 8100
+   - Hosts the Graph Service on port 8101
    - Built from the root Dockerfile
    - Handles all agent functionality and user interactions
 

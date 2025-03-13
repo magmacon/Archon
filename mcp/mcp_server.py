@@ -19,7 +19,7 @@ mcp = FastMCP("archon", log_level="ERROR")
 active_threads: Dict[str, List[str]] = {}
 
 # FastAPI service URL
-GRAPH_SERVICE_URL = os.getenv("GRAPH_SERVICE_URL", "http://localhost:8100")
+GRAPH_SERVICE_URL = os.getenv("GRAPH_SERVICE_URL", "http://localhost:8101")
 
 def write_to_log(message: str):
     """Write a message to the logs.txt file in the workbench directory.
